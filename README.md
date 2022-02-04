@@ -20,7 +20,18 @@ the mask area and prompt the scrit to the next drawing.
 
 *Manual control point locating*
 
+*cpselect* function is called to mannually apply control points that represent
+the same location between the reference channel (SIN) and moving channels. We found
+8-10 points on the hexagonal edge of each channel and 1-2 points at the center of
+each channel are enough to achieve good registration result. *cpcorr* function is 
+then called to fine tune each control point pair by using 2-D cross-correlation.
 
+*Image Registering*
+The script loads the image to be registered and uses the priviously defined ROIs
+and control points to apply local weighted mean-based registration
+*Goshtasby, Ardeshir, "Image registration by local approximation methods," Image and Vision Computing, Vol. 6, 1988, pp. 255-261.*
+
+The registered result is save as *OME.tif* file
 
 * linearunmixing.m
  
