@@ -4,7 +4,11 @@ using SHy-Cam data.
 ![alt text](https://https://github.com/PaulWZZtoLA/Single-snapshot-Hyperspectral-Phasor-Camera-SHy-Cam/blob/main/misc/Picture1.jpg?raw=true)
 
 ## Image pre-processing and spectra linear unmixing
-### Matlab script:
+
+SHy-Cam image is saved in *OME.tif* format. In order to successfully
+load and save data using MATALB, make sure you follow the instruction linked here
+to setup MATLAB environment:
+https://docs.openmicroscopy.org/bio-formats/5.7.1/developers/matlab-dev.html
 
 #### registration.m
 
@@ -31,7 +35,8 @@ The script loads the image to be registered and uses the priviously defined ROIs
 and control points to apply local weighted mean-based registration
 *Goshtasby, Ardeshir, "Image registration by local approximation methods," Image and Vision Computing, Vol. 6, 1988, pp. 255-261.*
 
-The registered result is save as *OME.tif* file
+The registered result is save as *OME.tif* file.
+
 
 * linearunmixing.m
  
