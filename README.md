@@ -3,6 +3,11 @@ This Github repository contains MATLAB demo codes for image processing and spect
 using SHy-Cam data.
 ![alt text](https://https://github.com/PaulWZZtoLA/Single-snapshot-Hyperspectral-Phasor-Camera-SHy-Cam/blob/main/misc/Picture1.jpg?raw=true)
 
+To visualize the result, Imaris Viewer is recommended. User can use this link:
+https://imaris.oxinst.com/imaris-viewer
+to download the free version of Imaris Vierwer.
+
+
 ## Image pre-processing and spectra linear unmixing
 
 SHy-Cam image is saved in *OME.tif* format. In order to successfully
@@ -16,7 +21,7 @@ Image registration is split into three actions in this script:
 
 *Cropping*
 
-The script loads a target image containing four channels and allows user
+This script loads a target image containing four channels and allows user
 to mannually draw four rectangular masks to define the ROIs of each channel.
 After dragging and draw each mask, user can adjust the locating points on the 
 mask to adjust its size.  A double click anywhere on the image will confirm
@@ -39,5 +44,11 @@ The registered result is save as *OME.tif* file.
 
 
 ### linearunmixing.m
+
+This script loads the register image from the registration step and the reference
+spectra of three pure fluorescence and applies a contraint least square solver
+to find the optimal 'contributions' from three known fluorescence inside of 
+the sample. The unmixed result is save with a *OME.tif* file.
+
 
  
