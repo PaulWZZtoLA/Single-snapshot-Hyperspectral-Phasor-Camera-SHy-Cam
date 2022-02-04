@@ -6,12 +6,12 @@ using SHy-Cam data.
 ### Matlab script:
 * registration.m
   Image registration is split into three actions in this script:
-  1. Cropping
+   **Cropping**
    The script loads a target image containing four channels and allows user
    to mannually draw four rectangular masks to define the ROIs of each channel.
    After dragging and draw each mask, user can adjust the locating points on the 
    mask to adjust its size.  A double click anywhere on the image will confirm
    the mask area and prompt the scrit to the next drawing.
-    
+
 * linearunmixing.m
  
