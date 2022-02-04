@@ -4,7 +4,7 @@ using SHy-Cam data.
 
 ## Image pre-processing and spectra linear unmixing
 ### Matlab script:
-* **registration.m**
+**registration.m**
 Image registration is split into three actions in this script:
 *Cropping*
 
