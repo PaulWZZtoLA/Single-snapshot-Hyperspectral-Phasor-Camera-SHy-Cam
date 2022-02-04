@@ -10,7 +10,7 @@ load and save data using MATALB, make sure you follow the instruction linked her
 to setup MATLAB environment:
 https://docs.openmicroscopy.org/bio-formats/5.7.1/developers/matlab-dev.html
 
-#### registration.m
+### registration.m
 
 Image registration is split into three actions in this script:
 
@@ -38,5 +38,6 @@ and control points to apply local weighted mean-based registration
 The registered result is save as *OME.tif* file.
 
 
-* linearunmixing.m
+### linearunmixing.m
+
  
