@@ -4,8 +4,11 @@ using SHy-Cam data.
 
 ## Image pre-processing and spectra linear unmixing
 ### Matlab script:
+
 registration.m
+
 Image registration is split into three actions in this script:
+
 *Cropping*
 
 The script loads a target image containing four channels and allows user
