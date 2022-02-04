@@ -1,7 +1,6 @@
 # Overview 
 This Github repository contains MATLAB demo codes for image processing and spectral linear unmixing
 using SHy-Cam data.
-![alt text](https://https://github.com/PaulWZZtoLA/Single-snapshot-Hyperspectral-Phasor-Camera-SHy-Cam/blob/main/misc/Picture1.jpg?raw=true)
 
 To visualize the result, Imaris Viewer is recommended. User can use this link:
 https://imaris.oxinst.com/imaris-viewer
@@ -48,7 +47,10 @@ The registered result is save as *OME.tif* file.
 This script loads the register image from the registration step and the reference
 spectra of three pure fluorescence and applies a contraint least square solver
 to find the optimal 'contributions' from three known fluorescence inside of 
-the sample. The unmixed result is save with a *OME.tif* file.
+the sample. The unmixed result is save with a *OME.tif* file. Consider converting
+it to *.ims* file for visualization.  
+
+
 
 
  
